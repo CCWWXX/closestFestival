@@ -1,0 +1,8 @@
+{
+  "name": "closestFestival",
+  "version": "0.0.1",
+  "description": "javascript获取最近的节日与其距离的时间",
+  "dependencies": {
+    
+  }
+}
