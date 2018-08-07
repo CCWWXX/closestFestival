@@ -4,8 +4,8 @@ let date = {
 	 return ((new Date(d1.replace(/-/g,"\/"))) >= (new Date(d2.replace(/-/g,"\/"))));	
 	},
 	minusDays(d1,d2){
-		let t1 = new Date(d1).getTime()
-		let t2 = new Date(d2).getTime()
+		let t1 = new Date(d1.replace(/-/g,"\/")).getTime()//IOS只能识别2017/01/02这种格式
+		let t2 = new Date(d2.replace(/-/g,"\/")).getTime()
 		let dateTime = 1000*60*60*24;
 		let minusDays = Math.floor(((t2-t1)/dateTime));
 		return(minusDays)
